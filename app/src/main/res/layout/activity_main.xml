@@ -5,13 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".activity.MainActivity">
+    tools:context=".main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@id/header1"
+        android:background="@color/cardview_dark_background">
+
+        <ImageButton
+            android:id="@+id/btn_toFavorite"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="29dp"
+            android:background="@drawable/ic_favorite2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAVORITE"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@+id/btn_toFavorite"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"/>
+
+
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_below="@+id/header1"
         android:gravity="center"
         android:text="GITHUB"
         android:textColor="@color/black"
@@ -71,5 +102,6 @@
         android:layout_centerInParent="true"
         android:outlineAmbientShadowColor="@android:color/holo_red_dark"
         android:visibility="invisible" />
+
 
 </RelativeLayout>
